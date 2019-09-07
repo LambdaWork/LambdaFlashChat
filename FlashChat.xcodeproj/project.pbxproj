@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		EF6D180023233A6300288016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D17FF23233A6300288016 /* AppDelegate.swift */; };
-		EF6D180223233A6300288016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D180123233A6300288016 /* ViewController.swift */; };
+		EF6D180223233A6300288016 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D180123233A6300288016 /* WelcomeVC.swift */; };
 		EF6D180523233A6300288016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D180323233A6300288016 /* Main.storyboard */; };
 		EF6D180723233A6400288016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6D180623233A6400288016 /* Assets.xcassets */; };
 		EF6D180A23233A6400288016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6D180823233A6400288016 /* LaunchScreen.storyboard */; };
 		EF6D181723233CF800288016 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF6D181623233CF800288016 /* GoogleService-Info.plist */; };
+		EFFC41282323539A00CD5C17 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC41272323539A00CD5C17 /* RegisterVC.swift */; };
+		EFFC412A23235BA800CD5C17 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC412923235BA800CD5C17 /* ChannelVC.swift */; };
 		FDB6BD643FC72A5B8FCBD2D1 /* Pods_FlashChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B19993E960968EA47D79428 /* Pods_FlashChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +24,14 @@
 		B4DFA9E8A1027EF8054F81EA /* Pods-FlashChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashChat.release.xcconfig"; path = "Target Support Files/Pods-FlashChat/Pods-FlashChat.release.xcconfig"; sourceTree = "<group>"; };
 		EF6D17FC23233A6300288016 /* FlashChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6D17FF23233A6300288016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF6D180123233A6300288016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF6D180123233A6300288016 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		EF6D180423233A6300288016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6D180623233A6400288016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6D180923233A6400288016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF6D180B23233A6400288016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6D181623233CF800288016 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFFC41272323539A00CD5C17 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		EFFC412923235BA800CD5C17 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				6D7EC5CF6AA184C262CD306E /* Pods-FlashChat.debug.xcconfig */,
 				B4DFA9E8A1027EF8054F81EA /* Pods-FlashChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,7 +116,9 @@
 		EF6D181323233C7500288016 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF6D180123233A6300288016 /* ViewController.swift */,
+				EF6D180123233A6300288016 /* WelcomeVC.swift */,
+				EFFC41272323539A00CD5C17 /* RegisterVC.swift */,
+				EFFC412923235BA800CD5C17 /* ChannelVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -248,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6D180223233A6300288016 /* ViewController.swift in Sources */,
+				EFFC412A23235BA800CD5C17 /* ChannelVC.swift in Sources */,
+				EFFC41282323539A00CD5C17 /* RegisterVC.swift in Sources */,
+				EF6D180223233A6300288016 /* WelcomeVC.swift in Sources */,
 				EF6D180023233A6300288016 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,7 +405,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = FlashChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlashChat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = FlashChat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlashChat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
